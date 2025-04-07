@@ -6,37 +6,43 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
 	<style>
-		/* Doc */
 		* {
-			box-sizing: border-box;
-		}
-		html,
-		body {
-			margin: 0;
-			padding: 0;
-		}
-		.container {
-			height: 100vh;
-			counter-reset: grid-counter;
-			background: #c7f4d0;
-		}
+    box-sizing: border-box;
+}
 
-		.item:before {
-			content: "Item " counter(grid-counter);
-		}
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
 
-		/* Résultats */
-		.grid {
-			height: 100vh;
-			grid-template-columns: repeat(6, 1fr);
-            gap: 2%;
- 
-		}
+.container {
+    height: 100vh;
+    counter-reset: grid-counter;
+    background: #c7f4d0;
+}
+/* j'avais oublié le disply:grid */
+.grid {
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 2%; 
+    height: 100%; /
+}
 
-		.item {
-			background-color: #f08080;
-			counter-increment: grid-counter;
-		}
+.item {
+    background-color: #f08080;
+    counter-increment: grid-counter; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 24px;
+    color: white; 
+}
+
+.item:before {
+    content: "Item " counter(grid-counter); /* Utilisation du compteur */
+}
 	</style>
 	<body>
 		<div class="container">
