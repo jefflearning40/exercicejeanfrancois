@@ -2,8 +2,8 @@
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Interface Non Accessible</title>
+		<meta name="ARIA accessible" content="width=device-width, initial-scale=1.0" />
+		<title>creation web</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -21,8 +21,9 @@
 		<div class="main">
 			<h2>Nos Services</h2>
 			<button
+                role="button"
 				class="toggle_menu_services"
-				aria-expanded="false"
+				aria-expanded="true"
 				aria-controls="menuServices">
 				☰ Menu
 			</button>
@@ -36,15 +37,21 @@
 			</ul>
 
 			<div class="service">
-				<h3>Développement Web</h3>
+				<h2>Développement Web</h2>
 				<p>Nous créons des sites modernes et sur-mesure.</p>
 				<button>En savoir plus</button>
 			</div>
 
 			<div class="service">
-				<h3>SEO</h3>
+				<h2>SEO</h2>
 				<p>Optimisation des sites pour Google.</p>
-				<button>En savoir plus</button>
+				<button
+                role="button"
+				class="toggle_menu_services"
+				aria-expanded="true"
+				aria-controls="menuServices">
+				En savoir plus
+			</button>
 			</div>
 
 			<img src="http://picsum.photos/800/600?v=1" />
@@ -55,7 +62,13 @@
 					<input type="text" placeholder="Nom complet" />
 					<input type="email" placeholder="Email" />
 					<textarea placeholder="Votre message"></textarea>
-					<button>Envoyer</button>
+					<button
+                        role="button"
+                        class="toggle_menu_services"
+                        aria-expanded="true"
+                        aria-controls="menuServices">
+                        Envoyer
+			        </button>
 				</form>
 			</div>
 		</div>
