@@ -1,128 +1,82 @@
-<!-- connection au github -->
- <!DOCTYPE html>
- <html lang="Fr">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiche Produit</title>
- </head>
- <body>
-    <!-- logo du site -->
-     <img src="assets/images/logo.jpg" alt="logo du site">
-     <!-- creation du titre -->
-     <h1 style="font-size: 36px; font-family: Arial, sans-serif; font-weight: bold;">Montre connectée <br> 
-      <!-- creation liste de liens -->
-       <ul>
-            <li><a href="">Description</a></li>
-            <li><a href="">Spécification Techniques</a></li>
-            <li><a href="">Avis Clients</a></li>
-        </ul>
-        <!-- integration ddes images de montre en fonction de l'écran -->
-        <picture>
-            <!-- image version mobil max 600px -->
-            <source srcset="assets/images/montre_mobile.jpg" media="(max-width: 600px)">
-            <!-- image versions superieur aux mobil de 600px a 1024px -->
-            <source srcset="assets/images/montre_desktop.jpg" media="(min-width: 601px)">
-            <!-- image affichée par defaut si les srcset ne fonctionnent pas -->
-            <img src="assets/images/montre_desktop.jpg" alt="Montre connectée" style="max-width: 100%; height: auto;">
-        </picture>
-        <!-- Titre Description -->
-         <h2 style="font-size: 24px; font-family: Arial, sans-serif;font-weight: bold; ">Description</h2>
-         <!-- Un paragraphe pour la descritption -->
-          <p style="font-size:16px;font-family:Arial;">La <b>SmartFit X</b> est une montre connectée équipée des dernières technologies. Elle vous permet de suivre votre activité physique, recevoir des notifications et bien plus encore !</p>
-          <!-- Caracteristiques principales : -->
-           <h2 style="font-size:16px;font-family:Arial;font-weight: bold;">Caracteristiques principales :</h2>
-           <!-- liste des caracteristiques -->
-            <ul>
-                <li>Écran OLED 1,5 pouces</li>
-                <li>Suivi du rythme cardiaque</li>
-                <li>Autonomie jusqu’à 7 jours</li>
-                <li>Étanche jusqu'à 50 mètres</li>
-                <li>Compatible iOS & Android</li>
-            </ul>
-            <!-- selsction de quantité -->
-             <div class="quantite">
-                <label for="quantite"><b>Quantité :</b></label>
-                <select id="quantity" name="quantity">
-                    <!-- Valeur  1 par défaut -->
-                    <option value="1" selected>1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <button type="submit">Acheter maintenant</button>
-            </div>
-            <!-- tableau caracteristiques et détails -->
-             <div class="tableau">
-                <h2 style="font-size:24; font-family: Arial, sans-serif; font-weight:bold;">Specifications Techniques</h2>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Caractéristique</th>
-                            <th>Détail</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Dimension</td>
-                            <td>42x42x11mm</td>
-                        </tr>
-                        <tr>
-                            <td>Poids</td>
-                            <td>50 g</td>
-                        </tr>
-                        <tr>
-                            <td>Batterie</td>
-                            <td>300 mAh(jusqu'à 7 jours d'autonomie)</td>
-                        </tr>
-                        <tr>
-                            <td>Connectivité</td>
-                            <td>Bluetooth 5.0</td>
-                        </tr>
-                        <tr>
-                            <td>Capteurs</td>
-                            <td>Cardiofrequencemetre,capteur de sommeil</td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-                <!--Avis des clients  -->
-                <h2 style="font-size:24; font-family: Arial, sans-serif; font-weight:bold;">Avis Clients</h2>
-                <ol>
-                    <li><b>Marie :</b> "Excellente montre, très intuitive et pratique !"</li>         
-                    <li><b>Lucas :</b> "Bonne autonomie et fonctionnalités au top."</li>
-                    <li><b>Emma :</b> "Parfait pour le sport, suivi précis et fiable."</li>
-                </ol>
-                <!-- Ajouter un Avis -->
-                <form action="#" method="post">
-                    <label for="pseudonyme">Pseudonyme :</label><br>
-                    <input type="text" id="pseudonyme" name="pseudonyme" required><br><br>
-            
-                    <label for="email">Email :</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
-            
-                    <label for="message">Message :</label><br>
-                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-            
-                    <button type="submit">Ajouter un Commentaire</button>
-                </form>
-                <!-- LES LIENS CONNEXES -->
-                 <h2 style="font-size:24; font-family: Arial, sans-serif; font-weight:bold;">LEs liens connexes</h2>
-                 <ul>
-                    <li><a href="">Voir d'autres montres connectées</a></li>
-                    <li><a href="">Politique de retour</a></li>
-                    <li><a href=""> FAQ et support client</a></li>
-                 </ul>
-                 <footer>
-                    <h3 style="font-size:16;font-family:inter, Arial,sans serif">© 2025 E-Shop Tech  | Mentions légales</h3>
-                 </footer>
-            </body>
-            </html> 
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Interface Non Accessible</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="header">
+			<h1>Bienvenue sur notre site</h1>
+			<div class="nav">
+				<ul>
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
 
-             
+		<div class="main">
+			<h2>Nos Services</h2>
+			<button
+				class="toggle_menu_services"
+				aria-expanded="false"
+				aria-controls="menuServices">
+				☰ Menu
+			</button>
 
+			<ul class="menu_services" hidden>
+				<li><a href="#">Développement web</a></li>
+				<li><a href="#">SEO</a></li>
+				<li><a href="#">SEA</a></li>
+				<li><a href="#">Marketing Digital</a></li>
+				<li><a href="#">UX Design</a></li>
+			</ul>
 
+			<div class="service">
+				<h3>Développement Web</h3>
+				<p>Nous créons des sites modernes et sur-mesure.</p>
+				<button>En savoir plus</button>
+			</div>
+
+			<div class="service">
+				<h3>SEO</h3>
+				<p>Optimisation des sites pour Google.</p>
+				<button>En savoir plus</button>
+			</div>
+
+			<img src="http://picsum.photos/800/600?v=1" />
+
+			<div class="contact">
+				<h2>Nous contacter</h2>
+				<form>
+					<input type="text" placeholder="Nom complet" />
+					<input type="email" placeholder="Email" />
+					<textarea placeholder="Votre message"></textarea>
+					<button>Envoyer</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p>© 2025 - Tous droits réservés</p>
+		</div>
+		<script>
+			// Script pour gérer l'ouverture/fermeture du menu accessible
+			document
+				.getElementById("menuServices-toggle")
+				.addEventListener("click", function () {
+					let menu = document.getElementById("menuServices");
+					let expanded = this.getAttribute("aria-expanded") === "true" || false;
+
+					this.setAttribute("aria-expanded", !expanded);
+					menu.hidden = expanded;
+				});
+		</script>
+	</body>
+</html>
 
 
 
