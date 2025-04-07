@@ -1,0 +1,29 @@
+/* Doc */
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    height: 100vh;
+    counter-reset: grid-counter;
+    background: #c7f4d0;
+}
+
+.item:before {
+    content: "Item " counter(grid-counter);
+}
+
+/* Résultats */
+.grid {
+    height: 100vh;
+
+}
+
+.item {
+    background-color: #f08080;
+    counter-increment: grid-counter;
+}

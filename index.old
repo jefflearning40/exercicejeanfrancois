@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="ARIA accessible" content="width=device-width, initial-scale=1.0" />
+		<title>creation web</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+        <header>
+            <div class="header">
+                <h1>Bienvenue sur notre site</h1>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#" >Accueil</a></li>
+                        <li><a href="#" tabindex="0">Services</a></li>
+                        <li><a href="#" tabindex="0">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main">
+                <h2>Nos Services</h2>
+                <button
+                    role="button"
+                    class="toggle_menu_services"
+                    aria-expanded="true"
+                    aria-controls="menuServices">
+                    ☰ Menu
+                </button>
+
+                <ul class="menu_services" hidden>
+                    <li><a href="#" tabindex="0">Développement web</a></li>
+                    <li><a href="#" tabindex="0">SEO</a></li>
+                    <li><a href="#" tabindex="0">SEA</a></li>
+                    <li><a href="#" tabindex="0">Marketing Digital</a></li>
+                    <li><a href="#" tabindex="0">UX Design</a></li>
+                </ul>
+
+                <div class="service">
+                    <h2>Développement Web</h2>
+                    <p>Nous créons des sites modernes et sur-mesure.</p>
+                    <button>En savoir plus</button>
+                </div>
+
+                <div class="service">
+                    <h2>SEO</h2>
+                    <p>Optimisation des sites pour Google.</p>
+                    <button
+                    role="button"
+                    class="toggle_menu_services"
+                    aria-expanded="true"
+                    aria-controls="menuServices">
+                    En savoir plus
+                </button>
+                </div>
+
+                <img src="http://picsum.photos/800/600?v=1" />
+
+                <div class="contact">
+                    <h2>Nous contacter</h2>
+                    <form>
+                        <input type="text" placeholder="Nom complet" />
+                        <input type="email" placeholder="Email" />
+                        <textarea placeholder="Votre message"></textarea>
+                        <button
+                            role="button"
+                            class="toggle_menu_services"
+                            aria-expanded="true"
+                            aria-controls="menuServices">
+                            Envoyer
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <p>© 2025 - Tous droits réservés</p>
+            </div>
+    </footer>
+		<script src="script.js"></script>
+
+	</body>
+</html>
+
+
+
+ 
