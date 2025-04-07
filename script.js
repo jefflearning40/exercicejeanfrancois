@@ -1,4 +1,4 @@
-<script>
+
 			// Script pour gérer l'ouverture/fermeture du menu accessible
 			document
 				.getElementById("menuServices-toggle")
@@ -9,4 +9,4 @@
 					this.setAttribute("aria-expanded", !expanded);
 					menu.hidden = expanded;
 				});
-		</script>
+		
