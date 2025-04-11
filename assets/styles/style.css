@@ -89,7 +89,10 @@ h1 {
   }
 
   .c-product {
-      width: calc(50% - 20px);
+    .c-product {
+      width: clamp(200px, 50%, 100%);
+      margin: auto;
+    /* }width: calc(50% - 20px); */
   }
 
   .c-product_title a {
@@ -103,6 +106,7 @@ h1 {
 
 @media (min-width: 900px) {
   .c-product {
-      width: calc(33.333% - 20px);
+    width: clamp(250px, 33.333%, 100%);
+      /* width: calc(33.333% - 20px); */
   }
 }
