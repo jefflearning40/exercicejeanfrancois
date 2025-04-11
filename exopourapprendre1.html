@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exos</title>
+</head>
+<body>
+    <nav>
+        <a href="">Acceuil</a>
+        <a href="">A propos</a>
+        <a href="">Contact</a>
+    </nav>
+    <div class="wrapper">
+        <div class="container">
+            <div class="card1">carte 1</div>
+            <div class="card2">carte 2</div>
+            <div class="card3">carte 3</div>
+            <div class="card4">carte 4</div>
+        </div>
+    </div>
+ <!-- -------------------------------------------------------------------------------------------------------------------------------------    -->
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-around;
+            background-color: #eee;
+            padding: 10px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            gap: 10px;
+            }
+
+        .container > div{
+            background-color: #ccc;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10px;
+            font-weight: bold;  
+            padding: 10PX;
+        }
+        body, html {
+            margin: 0;
+            height: 100%;
+        }
+
+        nav {
+            background-color: #eee;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: calc(100% - 50px); /* Ajuste la hauteur pour tenir compte du nav */
+        }
+
+        .box {
+            background-color: #ccc;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+       
+        @media (max-width: 600px) {
+        .container {
+            flex-direction: column;  /* Change la disposition en colonne */
+            align-items: center;     /* Centrer les boîtes */
+            }
+        }
+
+        
+    </style>
+</body>
+</HTML>
