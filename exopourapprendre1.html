@@ -4,86 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exosperso</title>
+   
 </head>
 <body>
-    <nav>
-        <a href="">Acceuil</a>
-        <a href="">A propos</a>
-        <a href="">Contact</a>
-    </nav>
-    <div class="wrapper">
-        <div class="container">
-            <div class="card1">carte 1</div>
-            <div class="card2">carte 2</div>
-            <div class="card3">carte 3</div>
-            <div class="card4">carte 4</div>
+    <header>
+        <nav>
+            <a href="">Acceuil</a>
+            <a href="">A propos</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <div class="card1">carte 1</div>
+                <div class="card2">carte 2</div>
+                <div class="card3">carte 3</div>
+                <div class="card4">carte 4</div>
+            </div>
+            <div class="texte">
+                <h1>Ceci est un petit exercice qui va me servir a construire mon projet</h1>
+            </div>
         </div>
-    </div>
- <!-- -------------------------------------------------------------------------------------------------------------------------------------    -->
+    </main>
+    
     <style>
-        nav{
+        nav {
             display: flex;
             justify-content: space-around;
             background-color: #eee;
             padding: 10px;
         }
-        .container{
+        .container {
             display: flex;
+            flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante */
             justify-content: space-between;
             padding: 20px;
             gap: 10px;
-            }
-
-        .container > div{
+        }
+        .container > div {
             background-color: #ccc;
-            width: 100px;
+            width: calc(50% - 20px); /* 50% de la largeur moins les marges et gaps */
             height: 100px;
             text-align: center;
             line-height: 100px;
             border-radius: 10px;
-            font-weight: bold;  
-            padding: 10PX;
+            font-weight: bold;
+            margin-bottom: 10px; /* Espace entre les lignes */
         }
         body, html {
             margin: 0;
             height: 100%;
         }
-
-        nav {
-            background-color: #eee;
-            padding: 10px;
-            display: flex;
-            justify-content: space-around;
-        }
-
         .wrapper {
             display: flex;
-            justify-content: center;
+            flex-direction: column; /* Changé pour empiler les éléments verticalement */
             align-items: center;
             width: 100%;
             height: calc(100% - 50px); /* Ajuste la hauteur pour tenir compte du nav */
         }
-
-        .box {
-            background-color: #ccc;
-            width: 200px;
-            height: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .texte {
             text-align: center;
-            font-weight: bold;
-            border-radius: 10px;
+            margin-top: 20px; /* Ajoute un espace entre les cartes et le texte */
         }
-       
         @media (max-width: 600px) {
-        .container {
-            flex-direction: column;  /* Change la disposition en colonne */
-            align-items: center;     /* Centrer les boîtes */
+            .container > div {
+                width: 100%; /* Sur les petits écrans, les cartes prennent toute la largeur */
             }
         }
-
-        
     </style>
 </body>
-</HTML>
+</html>
