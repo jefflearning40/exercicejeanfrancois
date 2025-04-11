@@ -1,50 +1,108 @@
 html, body {
-    background: #f0f0f0;
-    margin: 0;
-    font-family: sans-serif;
-  }
+  background: #f0f0f0;
+  margin: 0;
+  font-family: sans-serif;
+}
 
+.container {
+  padding: 10px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.c-breadcrumb {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.9em;
+}
+
+.c-breadcrumb li::after {
+  content: ">";
+  margin: 0 5px;
+}
+
+.c-breadcrumb li:last-child::after {
+  content: "";
+}
+
+.c-products-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.c-product {
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.c-product_thumb img {
+  max-width: 100%;
+  height: auto;
+}
+
+.c-product_infos {
+  text-align: center;
+}
+
+.c-product_title a {
+  font-size: 1em;
+}
+
+.c-product_price {
+  font-size: 1.2em;
+  color: #e00;
+}
+
+@media (min-width: 600px) {
   .container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
   }
 
   h1 {
-    text-align: center;
+      font-size: 2em;
   }
 
   .c-breadcrumb {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 5px;
-    font-size: 0.9em;
-  }
-
-  .c-breadcrumb li::after {
-    content: ">";
-    margin: 0 5px;
-  }
-
-  .c-breadcrumb li:last-child::after {
-    content: "";
+      flex-direction: row;
   }
 
   .c-products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
+      flex-direction: row;
+      flex-wrap: wrap;
   }
 
   .c-product {
-    background-color: #fff;
-    border: 1px solid #dadada;
-    border-radius: 5px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    transition:
+      width: calc(50% - 20px);
+  }
+
+  .c-product_title a {
+      font-size: 1.2em;
+  }
+
+  .c-product_price {
+      font-size: 1.5em;
+  }
+}
+
+@media (min-width: 900px) {
+  .c-product {
+      width: calc(33.333% - 20px);
+  }
+}
