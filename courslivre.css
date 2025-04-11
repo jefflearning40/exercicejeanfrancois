@@ -2,15 +2,28 @@ p{
     color:green;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
+    text-align: center;
 }
 h1{
     color: red;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font: size 30px;
+    text-align: end;
 
 }
 h2{
     color: purple;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
+    text-align: justify;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+#idparagraphe{
+    color: red;
+    text-align: start;
+}
+.classparagraphe{
+    color: green;
+    text-align:end ;
 }
