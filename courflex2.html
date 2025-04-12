@@ -6,43 +6,38 @@
     <title>modele de boite</title>
 </head>
 <body>
-    <div class="container">
-        <div class="div1">
-            <h1>Position relative</h1>
-            <p>Un premier paragraphe avec sa position par defaut</p>
-            <p class="relative">un second avec une position relative left 50px</p>
-            <p class=""></p>
-        </div>
-        <div class="div2">
-            <h2>Position absolue</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto molestiae facilis eius ut repellat, fugit odio laboriosam illo sit ad doloremque, corporis reiciendis aliquam? Architecto aut magnam amet minus molestias.
-            Tenetur pariatur cupiditate fugiat odit odio, velit ullam officiis alias soluta impedit eum provident perspiciatis deserunt in. Quod labore, soluta unde distinctio quam debitis dolore! Illo eos nemo saepe quia?</p>
-        </div>
+    <div class="div1">
+        <h1>boite</h1>
+        <p>border top left de 10 px et fond transprent</p>
+        <p>couleur rgba et ombre et rotation</p>
     </div>
-
-
-
-    <style>
-        .container{
+       
+        <style>
+            body,html{
+            height: 100%;
+            margin: 0;
             display: flex;
-            flex-direction: column;
-        }
-        .div1{
-            background-color: aqua;
-            width: 450px;
-            border: 1px solid gray;
-        }
-        .relative{
-            position: relative;
-            left:50px;
-        }
-       .div2{
-        color: red;
-        position: relative;
-        top: 20px;
-        left: 100px;
+            justify-content: center;
+            align-items: center;
 
-       }
-    </style>
+            }
+             body {
+            background-image: image();
+            background-image: url(assets/imagescours/image5.jpg); /* Remplacez par l'URL de votre image */
+            background-size: cover; /* Ajuste la taille de l'image pour couvrir tout l'écran */
+            background-position: center; /* Centre l'image */
+        }
+         .div1{
+            /* background-color: hsla(40,50%, 80%, .5); */
+            background-color: rgba(240,192,23,.5);
+            width: 450px;
+            border: 10px solid black;
+            border-top-left-radius: 20px;
+            box-shadow: 10px 10px 5px 5px grey;
+            transform: rotate(15deg);
+           
+        }
+        
+        </style>
 </body>
 </html>
